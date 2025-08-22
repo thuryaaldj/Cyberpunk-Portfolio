@@ -1,4 +1,4 @@
-@import "tailwindcss";
+ /* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -23,4 +23,75 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} 
+ */
+@import "tailwindcss";
+
+/* 🎨 Cyberpunk Brutal Theme */
+:root {
+  --background: #0D0D0D;
+  --panel: #1A1A1A;
+  --accent-cyan: #00F5FF;
+  --accent-magenta: #FF3CAC;
+  --accent-purple: #A259FF;
+  --text-main: #FFFFFF;
+  --text-secondary: #A0A0A0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-panel: var(--panel);
+  --color-accent-cyan: var(--accent-cyan);
+  --color-accent-magenta: var(--accent-magenta);
+  --color-accent-purple: var(--accent-purple);
+  --color-text-main: var(--text-main);
+  --color-text-secondary: var(--text-secondary);
+
+  --font-arabic: "Tajawal", sans-serif;
+  --font-english: "Inter", sans-serif;
+}
+
+/* 🌙 وضع الداكن/الفاتح */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0D0D0D;
+    --foreground: #FFFFFF;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--text-main);
+  font-family: var(--font-arabic);
+  direction: rtl;
+}
+
+@layer components {
+  /* رابط نيون مناسب لـ RTL */
+  .nav-neon-link {
+    @apply relative text-text-main/80 hover:text-accent-cyan tracking-wide transition-colors duration-300;
+  }
+  .nav-neon-link::after {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;            /* يدعم RTL/LTR */
+    inset-block-end: -6px;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;          /* RTL: يبدأ من اليمين */
+    transition: transform .35s ease;
+    background: linear-gradient(90deg, var(--accent-magenta), var(--accent-cyan));
+    box-shadow: 0 0 8px var(--accent-cyan);
+  }
+  .nav-neon-link:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* تأثير “عائِم” لما يصير الناف عائم أثناء السكrol */
+  .floating-nav {
+    @apply bg-background/75 backdrop-blur-md border border-accent-cyan/30 rounded-2xl;
+    /* وهج خفيف سايبربنك */
+    box-shadow: 0 0 20px rgba(0,245,255,0.35);
+  }
 }
