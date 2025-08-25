@@ -4,6 +4,7 @@ import gsap from "gsap";
 import Navbar from "../../components/layout/Navbar";
 import Hero from "../../components/sections/Hero";
 import Projects from "../../components/sections/Project";
+import Contact from "../../components/sections/Contact";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -94,6 +95,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Projects />
+      <Contact/>
     </div>
   );
 }

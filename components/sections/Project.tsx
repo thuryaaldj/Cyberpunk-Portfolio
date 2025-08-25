@@ -71,7 +71,7 @@ gsap.fromTo(
       ref={wrapperRef}
       id="projects"
       className="relative min-h-screen flex flex-col items-start justify-start px-6 py-12 
-                 bg-gradient-to-br from-accent-magenta/20 via-background to-accent-cyan/20 overflow-hidden"
+                bg-gradient-to-br from-accent-magenta/20 via-background to-accent-cyan/20 overflow-hidden"
     >
 <h2 className="hero-line text-3xl sm:text-6xl font-bold text-text-main leading-tight mb-16">
   My Projects
