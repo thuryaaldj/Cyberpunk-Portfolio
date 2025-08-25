@@ -1,0 +1,61 @@
+{
+  "projects": [
+    {
+  "id": 1,
+  "image": "admin-dashboard.png",
+  "title": "Admin Dashboard",
+  "description": "A responsive and user-friendly admin dashboard with clean UI, interactive charts, dynamic tables, and efficient form handling for smooth management experience.",
+  "githubLink": "https://github.com/thuryaaldj/Admin-Dashboard.git",
+  "liveLink": "",
+  "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Recharts", "Lucide React", "React Hook Form", "Zod"]
+},
+    {
+      "id": 2,
+      "image": "bus.png",
+      "title": "Bus Booking App",
+      "description": "A user-friendly app for booking bus seats with seat selection and confirmation.",
+      "githubLink": "https://github.com/thuryaaldj/Bus-Booking-App.git",
+      "liveLink":"",
+      "technologies": ["React", "GSAP", "Tailwind CSS","Axios","React Router DOM " , "Rest API","React Hooks"]
+    },
+        {
+      "id": 3,
+      "image": "awwwards.png",
+      "title": "Award-Winning Animated Website",
+      "description": "responsive web app for award-winning featuring a clean UI, smooth animations, and modern design ",
+      "githubLink": "https://github.com/thuryaaldj/animated-awwwards.git",
+      "liveLink":"https://animated-awwwards.vercel.app/",
+      "technologies": ["React", "GSAP", "Tailwind CSS"]
+    }
+    ,
+    {
+      "id": 4,
+      "image": "shop.png",
+      "title": "My Shop",
+      "description": "An eCommerce platform where users can browse, add to cart, and checkout smoothly.",
+      "githubLink": "https://github.com/thuryaaldj/My-Shop",
+      "liveLink":"",
+      "technologies": ["React", "GSAP", "Tailwind CSS"]
+    },
+
+        {
+      "id": 5,
+      "image":"vege.png",
+      "title": "Vege Store",
+      "description": "An online vegetable store with a clean interface and responsive layout.",
+      "githubLink": "https://github.com/thuryaaldj/Fru-vege-store.git",
+      "liveLink":"https://fru-vege-store.vercel.app/",
+      "technologies": ["React", "GSAP", "Tailwind CSS"]
+    },
+      {
+      "id":6,
+      "image":"Hangman.png",
+      "title": "Hangman Word Game",
+      "description": "An educational and intertaining word game , with a simple interface ,well-organized logic , and many useful features ",
+      "githubLink": "https://github.com/thuryaaldj/Hangman.git",
+      "liveLink":"https://hangman-beta-ebon.vercel.app/",
+      "technologies": ["TypeScript", "HTML", " CSS"]
+    }
+
+  ]
+}
